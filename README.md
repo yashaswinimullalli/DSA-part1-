@@ -12,7 +12,7 @@ It covers the fundamentals and some advanced concepts with clean, beginner-frien
 - Vectors  
 - Characters & Strings  
 - Bit Manipulation  
-- OOPs Basics  
+- OOPs   
 - Advanced Recursion  
 - Divide & Conquer  
 - Time Complexity Analysis  
