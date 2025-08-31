@@ -115,7 +115,7 @@ int main(){
 	countsetbit(31);
 	return 0;
 }*/
-void fastexpo(int x,int n){
+/*void fastexpo(int x,int n){
 	int ans = 1;
 	while( n>0){
 		int lastbit = n & 1;
@@ -131,8 +131,7 @@ int main(){
 	
 	fastexpo(3,4);
 	return 0;
-}
-
+}*/
 
 
   
