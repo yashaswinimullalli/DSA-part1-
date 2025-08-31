@@ -161,7 +161,7 @@ int main(){
 
 //using operators to compare the variables
 
-int main(){
+/*int main(){
 	string str = "aar";
 	string str1 ="car";
 	cout<<(str ==str1)<<endl;
@@ -169,3 +169,4 @@ int main(){
 	cout<<(str < str1)<<endl;
 	return 0;
 }
+*/
