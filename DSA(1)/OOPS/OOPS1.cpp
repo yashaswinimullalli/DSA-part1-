@@ -183,7 +183,7 @@ int main(){
 			this->name = name;
 			this->color=color;
 		}
-		car(car &original){
+		car(const car &original){
 			cout<<"copiying original to new.\n";
 			name = original.name;
 			color = original.color;
@@ -258,9 +258,9 @@ int main(){
 	return 0;
 }*/
 
-//deep copy
+//deep copy (it requires a custom copy constructor)
 
-class car{
+/*class car{
 		public:
 		string name;
 		string color;
@@ -290,7 +290,46 @@ int main(){
 	*c2.mileage = 10;
 	cout<<*c1.mileage<<endl ;
 	return 0;
-}
+}*/
 
+//deconstructor
+class car{
+		public:
+		string name;
+		string color;
+		int *mileage;
+		car(string name,string color){
+			cout<<"original car"<<endl;
+			this->name = name;
+			this->color=color;
+			mileage = new int; // dynamic allocation
+			*mileage =12;
+		}
+		car(const car &original){
+			cout<<"copiying original to new."<<endl;
+			name = original.name;
+			color = original.color;
+			mileage = new int;
+			*mileage = *original.mileage;
+		}
+		~car(){
+			cout<<"deleting object"<<endl;
+			if(mileage != NULL){
+				delete mileage;
+				mileage =NULL;
+			}
+
+		}
+	};
+int main(){
+	car c1("maruti","white");
+	car c2(c1);// custom copy constructor
+	cout<<c2.name<<endl;
+	cout<<c2.color<<endl;
+	cout<<*c2.mileage<<endl;
+	*c2.mileage = 10;
+	cout<<*c1.mileage<<endl ;
+	return 0;
+}
 
 
