@@ -174,7 +174,7 @@ int main(){
 }
 */
 
-class car{
+/*class car{
 		public:
 		string name;
 		string color;
@@ -196,8 +196,67 @@ int main(){
 	cout<<c2.name<<endl;
 	cout<<c2.color<<endl;
 	return 0;
+}*/
+//default constructor
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    // Default constructor (no arguments)
+    Student() {
+        name = "Not given";
+        age = 0;
+        cout << "Default constructor called.\n";
+    }
+};
+
+int main() {
+    Student s1;   // default constructor is called
+
+    cout << "Name: " << s1.name << endl;
+    cout << "Age: " << s1.age << endl;
+
+    return 0;
 }
 
-//
+
+//shallow and deep copy
+//shallow copy
+
+class car{
+		public:
+		string name;
+		string color;
+		int *mileage;
+		car(string name,string color){
+			cout<<"original car";
+			this->name = name;
+			this->color=color;
+			mileage = new int; // dynamic allocation
+			*mileage =12;
+		}
+		car(const car &original){
+			cout<<"copiying original to new.\n";
+			name = original.name;
+			color = original.color;
+			mileage = original.mileage;
+		}
+
+	};
+int main(){
+	car c1("maruti","white");
+	car c2(c1);// custom copy constructor
+	cout<<c2.name<<endl;
+	cout<<c2.color<<endl;
+	cout<<*c2.mileage<<endl;
+	*c2.mileage = 10;
+	cout<<*c1.mileage<<endl ;
+	return 0;
+}
+
 
 
