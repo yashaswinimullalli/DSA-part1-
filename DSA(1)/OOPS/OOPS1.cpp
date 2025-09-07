@@ -293,7 +293,7 @@ int main(){
 }*/
 
 //deconstructor
-class car{
+/*class car{
 		public:
 		string name;
 		string color;
@@ -330,6 +330,7 @@ int main(){
 	*c2.mileage = 10;
 	cout<<*c1.mileage<<endl ;
 	return 0;
-}
+}*/
+
 
 
