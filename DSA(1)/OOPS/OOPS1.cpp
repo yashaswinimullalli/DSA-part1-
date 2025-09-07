@@ -332,5 +332,35 @@ int main(){
 	return 0;
 }*/
 
+//Inheritece
+class Animal{
+	public:
+	string color;
+	void eat(){
+		cout<<"eats"<<endl;
+	}
+	void breathe(){
+		cout<<"breaths"<<endl;
+	}
+};
+class fish : protected Animal{
+	public:
+	int fins;
+	void swim(){
+		eat();
+		cout<<"swim"<<endl;
+	}
+	
+};
+int main(){
+		fish f1;
+		f1.fins = 3;
+		//cout<<f1.fins<<endl;
+		/*f1.swim();
+		f1.breathe();
+		f1.eat();*/
+	return 0;
+}
+
 
 
