@@ -362,6 +362,7 @@ int main(){
 	//	f1.eat();
 	return 0;
 }*/
+//multilevel inheitence
 /*class Animal{
 	public:
 	void eat(){
@@ -392,6 +393,35 @@ int main(){
 	cout<<d1.bloodtype<<endl;
 	return 0;
 }*/
+
+//multiple inheritence
+/*class teacher{
+	public:
+	int salary;
+	string subject;
+
+};
+class student{
+	public:
+	int rollno;
+	float cgpa;
+};
+class TA : public teacher,public student{
+	public:
+	string name;
+};
+int main(){
+	TA ta;
+	ta.name = "sonic";
+	ta.subject ="c++";
+	ta.cgpa = 9.4;
+
+	cout<<ta.name<<endl;
+	cout<<ta.cgpa<<endl;
+	cout<<ta.subject<<endl;
+	return 0;
+}*/
+
 
 
 
