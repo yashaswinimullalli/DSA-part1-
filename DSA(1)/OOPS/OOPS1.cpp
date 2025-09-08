@@ -333,7 +333,8 @@ int main(){
 }*/
 
 //Inheritece
-class Animal{
+//single level of inheritence 
+/*class Animal{
 	public:
 	string color;
 	void eat(){
@@ -343,7 +344,7 @@ class Animal{
 		cout<<"breaths"<<endl;
 	}
 };
-class fish : protected Animal{
+class fish : public Animal{ // try wiht protected ,private
 	public:
 	int fins;
 	void swim(){
@@ -356,11 +357,42 @@ int main(){
 		fish f1;
 		f1.fins = 3;
 		//cout<<f1.fins<<endl;
-		/*f1.swim();
-		f1.breathe();
-		f1.eat();*/
+	//	f1.swim();
+	//	f1.breathe();
+	//	f1.eat();
 	return 0;
-}
+}*/
+/*class Animal{
+	public:
+	void eat(){
+		cout<<"eats\n";
+	}
+	void breathe(){
+		cout<<"breathe\n";
+	}
+};
+class Mammal : public Animal{
+	public:
+	string bloodtype;
+	Mammal(){
+		bloodtype = "warm";
+	}
+};
+class Dog : public Mammal{
+	public:
+	void tailwag(){
+		cout<<"a dog wags its tail\n";
+	}
+};
+int main(){
+	Dog d1;
+	d1.breathe();
+	d1.eat();
+	d1.tailwag();
+	cout<<d1.bloodtype<<endl;
+	return 0;
+}*/
+
 
 
 
