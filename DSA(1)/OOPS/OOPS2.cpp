@@ -24,7 +24,7 @@ int main(){
 
 //1.compile time polymorphism --> (1) operator overloding 
  
-class complex{
+/*class complex{
 	int real;
 	int img;
 	public:
@@ -50,4 +50,23 @@ int main(){
 	c2.showNum();
 	c1 +c2;
 	return 0;
-}
+}*/
+//function overriding
+/*class parent{
+public:
+	void show(){
+		cout<<"parent class show..\n";
+	}
+};
+class child : public parent{
+	public:
+	void show(){    // same naam + same parameters -> overriding
+
+		cout<<"parent class show..\n";
+	}
+};
+int main(){
+	child c1; // Child ka function chalega
+	c1.show();
+	return 0;
+}*/
