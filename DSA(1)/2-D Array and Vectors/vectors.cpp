@@ -72,7 +72,7 @@ int main(){
 	cout<<endl;
 	return 0;
 }*/
-
+//vector
 /*int main(){
 	vector<int> vec ={1,2,3,4};
 	cout<<"size :"<<vec.size()<<endl;
